@@ -1,0 +1,132 @@
+
+/*SECTIONs*/
+.section {
+    display: none;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    background-color:  var(--grey__0);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: rgba(218, 186, 186, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    flex-wrap: wrap;
+    min-height: 375px;
+    width: 850px;
+}
+
+.section.selected {
+    display: flex;
+    z-index: 1;
+}
+
+.section::after {
+    content: "";
+    height: 300px;
+    width: 3px;
+    position: absolute;
+    background-color: var(--grey__1);
+    border-radius: 50px;
+    top: 15%;
+    left: 50%;
+}
+
+.description {
+    margin-top: 40px;
+    padding: clamp(10px , 20px,  30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+
+/*TITLEs*/
+.title__0 {
+    font-size: 1.5em;
+    color: var(--white__0);
+}
+
+.title__1 {
+    font-size: clamp(1rem, 2rem, 3rem);
+    color: var(--pink__0);
+}
+
+
+/*TEXTs*/
+.text__0 {
+    color: var(--white__1);
+    word-wrap: break-word;
+    width: 100%;
+}
+
+/*INPUTs*/
+.input__text {
+    width: 100%;
+    background-color: inherit;
+    border-bottom: solid var(--grey__1);
+    height: 30px;
+    color: var(--white__1);
+    font-family: var(--pixel);
+}
+
+.input__text:focus {
+    outline: none;
+}
+
+.input__text::placeholder {
+    font-family: var(--pixel);
+    font-size: 20px;
+}
+
+/*BUTTONs*/
+.btn__0 {
+    background-color: inherit;
+    font-family: var(--pixel);
+    color: var(--pink__0);
+    font-size: 20px;
+    transition: all .2s;
+}
+
+.btn__0:hover {
+    color: var(--pink__1);
+    cursor: pointer;
+}
+
+.btn__arrow {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family: var(--pixel);
+    background-color: var(--grey__1);
+    color: var(--pink__0);
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/*IMGs*/
+.img__dice {
+    max-width: 150px;
+    height: auto;
+}
+
+
+
+
+

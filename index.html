@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Mini Projects</title>
+
+    <link rel="stylesheet" href="assets/css/global/global.css" />
+  </head>
+  <body class="">
+    <!-- PREVIOUS BUTTON -->
+    <button id="btn__previous" class="btn__arrow">
+      <p style="transform: translateX(-1px)"><</p>
+    </button>
+
+    <!--NAME CHANGE-->
+    <article class="section">
+      <div class="description">
+        <h1 class="title__1">NAME CHANGER</h1>
+        <p class="text__0">Type your name in the box bellow.</p>
+      </div>
+      <div class="content">
+        <input
+          id="name__0"
+          class="input__text"
+          placeholder="NAME"
+          type="text"
+        />
+        <button id="btn__0" class="btn__0">SUBMIT</button>
+        <p id="result__0" class="text__0"></p>
+      </div>
+    </article>
+
+    <!--CIRCUMFERENCE CALC-->
+    <article class="section">
+      <div class="description">
+        <h1 class="title__1">CIRCUMFERENCE CALC</h1>
+        <p class="text__0">
+          A calculator to that calcs the circumference of a circle
+        </p>
+      </div>
+      <div class="content">
+        <input
+          id="radius"
+          class="input__text"
+          placeholder="PUT THE RADIUS, EX: 12"
+          type="text"
+        />
+        <button id="btn__1" class="btn__0">SUBMIT</button>
+        <p id="result__1" class="text__0"></p>
+      </div>
+    </article>
+
+    <!--COUNTER-->
+    <article class="section">
+      <div class="description">
+        <h1 class="title__1">COUNTER PROGRAM</h1>
+        <p class="text__0">
+          A calculator to that calcs the circumference of a circle
+        </p>
+      </div>
+      <div class="content" style="gap: 5px">
+        <h2 class="title__1">Counter</h2>
+        <p
+          id="result__counter"
+          class="title__1"
+          style="font-size: 80px; color: var(--white__1)"
+        >
+          00
+        </p>
+        <div style="display: flex; gap: 15px">
+          <button id="btn__sub" class="btn__0">SUB</button>
+          <button id="btn__reset" class="btn__0">RESET</button>
+          <button id="btn__add" class="btn__0">ADD</button>
+        </div>
+      </div>
+    </article>
+
+    <!--DICE THROWING-->
+    <article class="section">
+      <div class="description">
+        <h1 class="title__1">DICE THROWING</h1>
+        <p class="text__0">Click in the button to row a dice</p>
+      </div>
+      <div class="content">
+        <img
+          src="https://opengameart.org/sites/default/files/side_1_pip.png"
+          id="img__dice"
+          class="img__dice"
+          alt="Dice"
+        />
+        <button id="btn__dice" class="btn__0">ROW</button>
+      </div>
+    </article>
+
+        <!--YES OR NO-->
+        <article class="section selected">
+          <div class="description">
+            <h1 class="title__1">YES OR <span style="text-decoration-line: line-through; opacity: .5;" >NO</span> OF COURSE!</h1>
+            <p class="text__0">
+              Maybe i'll give you a choice.. maybe not
+            </p>
+          </div>
+          <div id="yesNo__container" class="content" style="gap: 5px; position: relative">           
+            <p
+            class="title__1"
+            style="font-size: 30px; color: var(--white__1)">Wanna marry me? 	&#129401;
+          </p>
+            <div style="display: flex; gap: 15px;">
+              <button id="btn__yes" class="btn__0">YES</button>
+              <button style="outline: none;" id="btn__no" class="btn__0">NO</button>
+            </div>
+            <p style="transform: scale(4); visibility: hidden; margin-top: 30px;" id="result__yes-no">&#128141; &#10068;</p>
+          </div>
+        </article>
+
+    <!-- NEXT BUTTON -->
+    <button id="btn__next" class="btn__arrow">
+      <p style="transform: translateX(1px)">></p>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
