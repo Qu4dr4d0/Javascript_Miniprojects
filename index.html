@@ -93,26 +93,59 @@
       </div>
     </article>
 
-        <!--YES OR NO-->
-        <article class="section selected">
-          <div class="description">
-            <h1 class="title__1">YES OR <span style="text-decoration-line: line-through; opacity: .5;" >NO</span> OF COURSE!</h1>
-            <p class="text__0">
-              Maybe i'll give you a choice.. maybe not
-            </p>
-          </div>
-          <div id="yesNo__container" class="content" style="gap: 5px; position: relative">           
-            <p
-            class="title__1"
-            style="font-size: 30px; color: var(--white__1)">Wanna marry me? 	&#129401;
-          </p>
-            <div style="display: flex; gap: 15px;">
-              <button id="btn__yes" class="btn__0">YES</button>
-              <button style="outline: none;" id="btn__no" class="btn__0">NO</button>
-            </div>
-            <p style="transform: scale(4); visibility: hidden; margin-top: 30px;" id="result__yes-no">&#128141; &#10068;</p>
-          </div>
-        </article>
+    <!--YES OR NO-->
+    <article class="section">
+      <div class="description">
+        <h1 class="title__1">
+          YES OR
+          <span style="text-decoration-line: line-through; opacity: 0.5"
+            >NO</span
+          >
+          OF COURSE!
+        </h1>
+        <p class="text__0">Maybe i'll give you a choice.. maybe not</p>
+      </div>
+      <div
+        id="yesNo__container"
+        class="content"
+        style="gap: 5px; position: relative"
+      >
+        <p class="title__1" style="font-size: 30px; color: var(--white__1)">
+          Wanna marry me? &#129401;
+        </p>
+        <div style="display: flex; gap: 15px">
+          <button id="btn__yes" class="btn__0">YES</button>
+          <button style="outline: none" id="btn__no" class="btn__0">NO</button>
+        </div>
+        <p
+          style="transform: scale(4); visibility: hidden; margin-top: 30px"
+          id="result__yes-no"
+        >
+          &#128141; &#10068;
+        </p>
+      </div>
+    </article>
+
+    <!--LIGHT-->
+    <article class="section selected">
+      <div class="description">
+        <h1 class="title__1">LIGHT SWITCH</h1>
+        <p class="text__0">
+          It's a little bit dark here, don't you think?
+        </p>
+      </div>
+      <div class="content" style="gap: 35px">
+        <img
+          id="lamp"
+          src="assets/imgs/lampOff.png"
+          alt="lamp off"
+        />
+        <div style="display: flex; gap: 15px">
+          <button id="btn__lampOff" class="btn__0">OFF</button>
+          <button id="btn__lampOn" class="btn__0">ON</button>
+        </div>
+      </div>
+    </article>
 
     <!-- NEXT BUTTON -->
     <button id="btn__next" class="btn__arrow">

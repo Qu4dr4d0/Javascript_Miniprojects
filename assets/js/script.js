@@ -144,3 +144,20 @@ btn__no.onmouseover = function() {
   btn__no.style.left = Math.floor(Math.random() * width__yesNo) + "px";
   btn__no.style.top = Math.floor(Math.random() * height__yesNo) + "px"; 
 }
+
+
+// LIGHT
+let lamp = document.getElementById('lamp');
+let btn__lampOn = document.getElementById('btn__lampOn');
+let btn__lampOff = document.getElementById('btn__lampOff');
+
+
+btn__lampOn.onclick = function() {
+  lamp.src = 'assets/imgs/lampOn.png'
+
+}
+
+btn__lampOff.onclick = function() {
+  lamp.src = 'assets/imgs/lampOff.png'
+}
+
