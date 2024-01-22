@@ -13,11 +13,11 @@
       <p style="transform: translateX(-1px)"><</p>
     </button>
 
-    <!--NAME CHANGE-->
+    <!--NAME READER-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">NAME CHANGER</h1>
-        <p class="text__0">Type your name in the box bellow.</p>
+        <h1 class="title__1">NAME READER</h1>
+        <p class="text__0">Name guesser</p>
       </div>
       <div class="content">
         <input
@@ -94,7 +94,7 @@
     </article>
 
     <!--YES OR NO-->
-    <article class="section">
+    <article class="section selected">
       <div class="description">
         <h1 class="title__1">
           YES OR
@@ -108,10 +108,10 @@
       <div
         id="yesNo__container"
         class="content"
-        style="gap: 5px; position: relative"
+        style="gap: 15px; position: relative"
       >
-        <p class="title__1" style="font-size: 30px; color: var(--white__1)">
-          Wanna marry me? &#129401;
+        <p class="title__1" style="font-size: 30px; color: var(--white__1); text-align: center;">
+          Wanna<br> marry me? &#129401;
         </p>
         <div style="display: flex; gap: 15px">
           <button id="btn__yes" class="btn__0">YES</button>
@@ -127,19 +127,15 @@
     </article>
 
     <!--LIGHT-->
-    <article class="section selected">
+    <article class="section">
       <div class="description">
         <h1 class="title__1">LIGHT SWITCH</h1>
-        <p class="text__0">
+        <p id="txt__lamp" class="text__0">
           It's a little bit dark here, don't you think?
         </p>
       </div>
       <div class="content" style="gap: 35px">
-        <img
-          id="lamp"
-          src="assets/imgs/lampOff.png"
-          alt="lamp off"
-        />
+        <img id="lamp" src="assets/imgs/lampOff.png" alt="lamp off" />
         <div style="display: flex; gap: 15px">
           <button id="btn__lampOff" class="btn__0">OFF</button>
           <button id="btn__lampOn" class="btn__0">ON</button>
@@ -147,10 +143,39 @@
       </div>
     </article>
 
+    <!--EMAIL SLICER-->
+    <article class="section">
+      <div class="description">
+        <h1 class="title__1">EMAIL SLICER</h1>
+        <p class="text__0">Type your email in the field</p>
+      </div>
+      <div class="content">
+        <input
+          id="email__1"
+          class="input__text"
+          placeholder="NAME"
+          type="text"
+        />
+        <button id="btnEmail" class="btn__0">SUBMIT</button>
+        <p id="FirstEmail" class="text__0"></p>
+        <p id="extensionEmail" class="text__0"></p>
+      </div>
+    </article>
+
     <!-- NEXT BUTTON -->
     <button id="btn__next" class="btn__arrow">
       <p style="transform: translateX(1px)">></p>
     </button>
+
+    <footer>
+      <p>
+        Copyright
+        <span style="font-family: Arial, Helvetica, sans-serif">&#169;</span>
+        2024 by<a target="_blank" href="https://www.linkedin.com/in/quadradoo/">
+          Quadrado</a
+        >
+      </p>
+    </footer>
 
     <script src="assets/js/script.js"></script>
   </body>

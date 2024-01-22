@@ -148,16 +148,39 @@ btn__no.onmouseover = function() {
 
 // LIGHT
 let lamp = document.getElementById('lamp');
+let txt__lamp = document.getElementById('txt__lamp');
+
 let btn__lampOn = document.getElementById('btn__lampOn');
 let btn__lampOff = document.getElementById('btn__lampOff');
 
 
 btn__lampOn.onclick = function() {
-  lamp.src = 'assets/imgs/lampOn.png'
-
+  lamp.src = 'assets/imgs/lampOn.png';
+  txt__lamp.innerHTML = `Nevermind...`
 }
 
 btn__lampOff.onclick = function() {
-  lamp.src = 'assets/imgs/lampOff.png'
+  lamp.src = 'assets/imgs/lampOff.png';
+  txt__lamp.innerHTML = `It's a little bit dark here, don't you think?`;
 }
+
+// EMAIL
+let btnEmail = document.getElementById('btnEmail');
+let FirstEmail = document.getElementById('FirstEmail');
+let extensionEmail = document.getElementById('extensionEmail');
+
+
+btnEmail.onclick = function() {
+  let email__1 = document.getElementById('email__1').value;
+  let fEmail = email__1.slice(0, email__1.indexOf('@'));
+  let ExEmail = email__1.slice(email__1.indexOf('@'));
+
+
+  FirstEmail.innerHTML = `Username: "${fEmail}"`;
+  extensionEmail.innerHTML = `Extension: "${ExEmail}"`;
+
+}
+
+
+
 
