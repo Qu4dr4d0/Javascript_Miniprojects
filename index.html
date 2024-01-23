@@ -13,17 +13,54 @@
       <p style="transform: translateX(-1px)"><</p>
     </button>
 
+    <!--YES OR NO-->
+    <article class="section selected">
+      <div class="description">
+        <h1 class="title__1">
+          YES OR
+          <span style="text-decoration-line: line-through; opacity: 0.5"
+            >NO</span
+          >
+          OF COURSE!
+        </h1>
+        <p class="text__0">Maybe i'll give you a choice.. maybe not</p>
+      </div>
+      <div
+        id="yesNo__container"
+        class="content"
+        style="gap: 15px; position: relative"
+      >
+        <p
+          class="title__1"
+          style="font-size: 20px; color: var(--text-color); text-align: center"
+        >
+          Wanna<br />
+          marry me?
+        </p>
+        <div style="display: flex; gap: 15px">
+          <button id="btn__yes" class="btn__0">YES</button>
+          <button style="outline: none" id="btn__no" class="btn__0">NO</button>
+        </div>
+        <p
+          style="transform: scale(2); visibility: hidden; margin-top: 30px"
+          id="result__yes-no"
+        >
+          &#128141; &#10068;
+        </p>
+      </div>
+    </article>
+
     <!--NAME READER-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">NAME READER</h1>
-        <p class="text__0">Name guesser</p>
+        <h1 class="title__1">Name reader</h1>
+        <p class="text__0">Let's see if the computer can guess you name..</p>
       </div>
       <div class="content">
         <input
           id="name__0"
           class="input__text"
-          placeholder="NAME"
+          placeholder="Name"
           type="text"
         />
         <button id="btn__0" class="btn__0">SUBMIT</button>
@@ -64,9 +101,9 @@
         <p
           id="result__counter"
           class="title__1"
-          style="font-size: 80px; color: var(--white__1)"
+          style="font-size: 80px; color: var(--sub-color)"
         >
-          00
+          0
         </p>
         <div style="display: flex; gap: 15px">
           <button id="btn__sub" class="btn__0">SUB</button>
@@ -90,39 +127,6 @@
           alt="Dice"
         />
         <button id="btn__dice" class="btn__0">ROW</button>
-      </div>
-    </article>
-
-    <!--YES OR NO-->
-    <article class="section selected">
-      <div class="description">
-        <h1 class="title__1">
-          YES OR
-          <span style="text-decoration-line: line-through; opacity: 0.5"
-            >NO</span
-          >
-          OF COURSE!
-        </h1>
-        <p class="text__0">Maybe i'll give you a choice.. maybe not</p>
-      </div>
-      <div
-        id="yesNo__container"
-        class="content"
-        style="gap: 15px; position: relative"
-      >
-        <p class="title__1" style="font-size: 30px; color: var(--white__1); text-align: center;">
-          Wanna<br> marry me? &#129401;
-        </p>
-        <div style="display: flex; gap: 15px">
-          <button id="btn__yes" class="btn__0">YES</button>
-          <button style="outline: none" id="btn__no" class="btn__0">NO</button>
-        </div>
-        <p
-          style="transform: scale(4); visibility: hidden; margin-top: 30px"
-          id="result__yes-no"
-        >
-          &#128141; &#10068;
-        </p>
       </div>
     </article>
 
@@ -153,12 +157,30 @@
         <input
           id="email__1"
           class="input__text"
-          placeholder="NAME"
+          placeholder="EMAIL"
           type="text"
         />
-        <button id="btnEmail" class="btn__0">SUBMIT</button>
+        <button id="btnEmail" class="btn__0">SLICE!</button>
         <p id="FirstEmail" class="text__0"></p>
         <p id="extensionEmail" class="text__0"></p>
+      </div>
+    </article>
+
+    <!--GUESS THE NUMBER-->
+    <article class="section">
+      <div class="description">
+        <h1 class="title__1">Number guesser</h1>
+        <p class="text__0">Let's see if you're a good guesser...</p>
+      </div>
+      <div class="content">
+        <input
+          id="guessNumber"
+          class="input__text"
+          placeholder="NUMBER"
+          type="text"
+        />
+        <button id="btnGuessNumber" class="btn__0">GUESS</button>
+        <p id="resultGuessNumber" class="text__0"></p>
       </div>
     </article>
 
@@ -170,7 +192,7 @@
     <footer>
       <p>
         Copyright
-        <span style="font-family: Arial, Helvetica, sans-serif">&#169;</span>
+        <span style="transform: scale(2)">&#169;</span>
         2024 by<a target="_blank" href="https://www.linkedin.com/in/quadradoo/">
           Quadrado</a
         >

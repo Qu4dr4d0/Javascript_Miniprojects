@@ -5,30 +5,29 @@
     grid-template-rows: 50px 1fr;
     grid-template-columns: 1fr 1fr;
     place-content: center;
-    background-color:  var(--grey__0);
+    background-color:  var(--sub-alt-color);
     border-radius: 20px;
     position: relative;
-    box-shadow: rgba(218, 186, 186, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     flex-wrap: wrap;
     min-height: 375px;
     width: 850px;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--grey__1);
-    height: 20x;
+    background-color: var(--sub-alt-color);
+    height: 30px;
     display: flex;
     justify-content: center;
-    color: var(--white__1);
+    color: var(--text-color);
+    align-items: center;
 }
 
 footer a {
-    color: rgb(0, 0, 0);
+    color: var(--main-color);
     text-decoration: underline;
-
 }
 
 .section.selected {
@@ -41,9 +40,9 @@ footer a {
     height: 300px;
     width: 3px;
     position: absolute;
-    background-color: var(--grey__1);
+    background-color: var(--sub-color);
     border-radius: 50px;
-    top: 15%;
+    top: 12%;
     left: 50%;
 }
 
@@ -73,20 +72,18 @@ footer a {
 
 
 /*TITLEs*/
-.title__0 {
-    font-size: 1.5em;
-    color: var(--white__0);
-}
+
 
 .title__1 {
     font-size: clamp(1rem, 2rem, 3rem);
-    color: var(--pink__0);
+    color: var(--sub-color);
+
 }
 
 
 /*TEXTs*/
 .text__0 {
-    color: var(--white__1);
+    color: var(--text-color);
     word-wrap: break-word;
     width: 100%;
 }
@@ -95,10 +92,10 @@ footer a {
 .input__text {
     width: 100%;
     background-color: inherit;
-    border-bottom: solid var(--grey__1);
+    border-bottom: solid var(--sub-color);
     height: 30px;
-    color: var(--white__1);
-    font-family: var(--pixel);
+    color: var(--sub-color);
+    font-family: var(--roboto);
 }
 
 .input__text:focus {
@@ -106,21 +103,26 @@ footer a {
 }
 
 .input__text::placeholder {
-    font-family: var(--pixel);
-    font-size: 20px;
+    font-family: var(--roboto);
+    font-size: 18px;
+    text-transform: lowercase;
 }
 
 /*BUTTONs*/
 .btn__0 {
     background-color: inherit;
-    font-family: var(--pixel);
-    color: var(--pink__0);
+    color: var(--sub-color);
     font-size: 20px;
     transition: all .2s;
+    background-color: var(--bg-color);
+    padding: 5px 25px;
+    border-radius: 5px;
+    text-transform: lowercase;
 }
 
 .btn__0:hover {
-    color: var(--pink__1);
+    color: var(--bg-color);
+    background-color: var(--text-color);
     cursor: pointer;
 }
 
@@ -129,12 +131,10 @@ footer a {
     min-height: 50px;
     border-radius: 50px;
     font-size: 25px;
-    font-family: var(--pixel);
-    background-color: var(--grey__1);
-    color: var(--pink__0);
+    background-color: var(--sub-alt-color);
+    color: var(--sub-color);
     cursor: pointer;
     font-weight: 900;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 /*IMGs*/

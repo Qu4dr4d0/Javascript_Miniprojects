@@ -145,6 +145,12 @@ btn__no.onmouseover = function() {
   btn__no.style.top = Math.floor(Math.random() * height__yesNo) + "px"; 
 }
 
+btn__no.onclick = function() {
+  btn__no.style.position = 'absolute';
+  btn__no.style.left = Math.floor(Math.random() * width__yesNo) + "px";
+  btn__no.style.top = Math.floor(Math.random() * height__yesNo) + "px"; 
+}
+
 
 // LIGHT
 let lamp = document.getElementById('lamp');
@@ -180,6 +186,32 @@ btnEmail.onclick = function() {
   extensionEmail.innerHTML = `Extension: "${ExEmail}"`;
 
 }
+
+// GUESS THE NUMBER
+let btnGuessNumber = document.getElementById('btnGuessNumber');
+let resultGuessNumber = document.getElementById('resultGuessNumber');
+let randomGuessNumber;
+
+randomGuessNumber = Math.floor(Math.random() * 100);
+
+
+btnGuessNumber.onclick = function() {
+  let GuessNumber = document.getElementById('guessNumber').value;
+  GuessNumber = Number(GuessNumber);
+
+  if (GuessNumber > randomGuessNumber) {
+    resultGuessNumber.innerHTML = `My number is LOWER than ${GuessNumber}!`;
+  } else if (GuessNumber < randomGuessNumber) {
+    resultGuessNumber.innerHTML = `My numer is HIGHTHER than ${GuessNumber}`;
+  } else if (GuessNumber == randomGuessNumber) {
+    resultGuessNumber.innerHTML = `Congrats, you got the right number!`;
+  }
+
+
+
+}
+
+console.log(randomGuessNumber);
 
 
 
