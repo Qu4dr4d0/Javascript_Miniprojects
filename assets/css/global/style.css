@@ -18,7 +18,7 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: var(--sub-alt-color);
-    height: 30px;
+    height: 25px;
     display: flex;
     justify-content: center;
     color: var(--text-color);
@@ -56,6 +56,7 @@ footer a {
     text-align: center;
     flex-direction: column;
     flex: 1;
+    width: auto;
 }
 
 .content {
@@ -67,7 +68,7 @@ footer a {
     gap: 30px;
     flex: 1;
     word-wrap: break-word;
-    width: 100%;
+
 }
 
 
@@ -84,18 +85,20 @@ footer a {
 /*TEXTs*/
 .text__0 {
     color: var(--text-color);
-    word-wrap: break-word;
-    width: 100%;
+    font-size: 1rem;
+    padding: 0 50px;
 }
 
 /*INPUTs*/
 .input__text {
-    width: 100%;
+
     background-color: inherit;
     border-bottom: solid var(--sub-color);
     height: 30px;
-    color: var(--sub-color);
+    color: var(--text-color);
     font-family: var(--roboto);
+    text-align: center;
+
 }
 
 .input__text:focus {
@@ -118,6 +121,15 @@ footer a {
     padding: 5px 25px;
     border-radius: 5px;
     text-transform: lowercase;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+}
+
+.btn__0:active {
+    outline: none;
+    border: none;
+    background-color: var(--bg-color);
 }
 
 .btn__0:hover {
@@ -137,12 +149,100 @@ footer a {
     font-weight: 900;
 }
 
-/*IMGs*/
+/*COLOUR VARIABLES*/
+.yellow {
+    color: var(--main-color);
+    text-overflow: hidden;
+    word-break: auto;
+}
+
+.red {
+    color: var(--error-color);
+}
+
+
+
+
+/*MINIPROJECTS ADJUSTS*/
+
+/*MARRY ME?*/
+#btn__no:hover {
+    background-color: var(--bg-color);
+    color: var(--sub-color);
+    transition: 0.05s;
+}
+
+
+
+
+/*RULE OF 3*/
+.ruleof3__wrapper1, .ruleof3__wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.ruleof3__input::placeholder, .ruleof3__input::placeholder {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ruleof3__input {
+    width: 150px;
+    background-color: inherit;
+    border-bottom: solid var(--sub-color);
+    height: 30px;
+    color: var(--sub-color);
+    font-family: var(--roboto);
+}
+
+#resultRuleOf3 {
+    transform: translateY(3px);
+    width: 150px;
+    height: 30px;
+    background-color: var(--sub-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+
+
+
+/*DICE*/
 .img__dice {
     max-width: 150px;
     height: auto;
 }
 
+
+
+/*COUNTER*/
+.btnCounter__wrapper {
+    display: flex;
+    gap: 3px;
+}
+
+#btn__reset .again {
+    width: 15px;
+}
+
+#btn__reset:hover .again {
+    animation: rotate .8s;
+}
+
+
+
+
+/*LAMP*/
+#btn__lampOff:focus, #btn__lampOn:focus {
+    color: var(--bg-color);
+    background-color: var(--main-color);
+}
 
 
 

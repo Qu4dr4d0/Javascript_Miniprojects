@@ -41,26 +41,25 @@ const btn__0 = (document.getElementById("btn__0").onclick = function () {
 
   name__0 == ""
     ? (result__0.innerHTML = "Please, put your name in the field..")
-    : (result__0.innerHTML = `Your name is: ${name__0.toUpperCase()} !`);
+    : (result__0.innerHTML = `- "Haha, no one can hide me, your name is: <span class='yellow'>${name__0} !</span>"`);
 });
 
 
 
-// CIRCUMFERENCE CALC
-const result__1 = document.getElementById("result__1");
+// RULE OF 3
+let resultRuleOf3 = document.getElementById("resultRuleOf3");
+let btnResultOf3 = document.getElementById('btnRuleOf3');
 
-const btn__1 = (document.getElementById("btn__1").onclick = function () {
-  let radius = document.getElementById("radius").value;
-  radius = Number(radius);
+btnResultOf3.onclick = function() {
+  let n1 = Number(document.getElementById('n1').value);
+  let n2 = Number(document.getElementById('n2').value);
+  let n3 = Number(document.getElementById('n3').value);
 
-  const circumference = 2 * Math.PI * radius;
+  let x = n2 * n3 / n1;
 
-  result__1.innerHTML = `The value of circumference is: ${circumference.toFixed(
-    4
-  )}!`;
-});
+  resultRuleOf3.innerHTML = `<span class='yellow'>${x.toFixed(3)}</span>`
 
-
+}
 
 // COUNTER
 const result__counter = document.getElementById("result__counter");
@@ -167,7 +166,7 @@ btn__lampOn.onclick = function() {
 
 btn__lampOff.onclick = function() {
   lamp.src = 'assets/imgs/lampOff.png';
-  txt__lamp.innerHTML = `It's a little bit dark here, don't you think?`;
+  txt__lamp.innerHTML = `It's so dark here...`;
 }
 
 // EMAIL
@@ -176,14 +175,18 @@ let FirstEmail = document.getElementById('FirstEmail');
 let extensionEmail = document.getElementById('extensionEmail');
 
 
+
+
 btnEmail.onclick = function() {
   let email__1 = document.getElementById('email__1').value;
   let fEmail = email__1.slice(0, email__1.indexOf('@'));
   let ExEmail = email__1.slice(email__1.indexOf('@'));
 
 
-  FirstEmail.innerHTML = `Username: "${fEmail}"`;
-  extensionEmail.innerHTML = `Extension: "${ExEmail}"`;
+
+
+  FirstEmail.innerHTML = `Username: <span class='yellow'><br>${fEmail}</span>`;
+  extensionEmail.innerHTML = `Extension: <span class='yellow'><br>${ExEmail}</span>`;
 
 }
 
@@ -196,22 +199,51 @@ randomGuessNumber = Math.floor(Math.random() * 100);
 
 
 btnGuessNumber.onclick = function() {
-  let GuessNumber = document.getElementById('guessNumber').value;
-  GuessNumber = Number(GuessNumber);
+  let GuessNumber = Number(document.getElementById('guessNumber').value);
 
-  if (GuessNumber > randomGuessNumber) {
-    resultGuessNumber.innerHTML = `My number is LOWER than ${GuessNumber}!`;
-  } else if (GuessNumber < randomGuessNumber) {
-    resultGuessNumber.innerHTML = `My numer is HIGHTHER than ${GuessNumber}`;
+  if (GuessNumber > randomGuessNumber && GuessNumber < 101) {
+    resultGuessNumber.innerHTML = `My number is <span class='yellow'>lower</span> than ${GuessNumber}!`;
+  } else if (GuessNumber < randomGuessNumber && GuessNumber > 0) {
+    resultGuessNumber.innerHTML = `My number is <span class='yellow'>highter</span> than ${GuessNumber}`;
   } else if (GuessNumber == randomGuessNumber) {
-    resultGuessNumber.innerHTML = `Congrats, you got the right number!`;
+    resultGuessNumber.innerHTML = `<span class='yellow'>Congrats</span>, you got the right number!`;
+    var defaults = {
+      spread: 360,
+      ticks: 50,
+      gravity: 0,
+      decay: 0.94,
+      startVelocity: 30,
+      colors: ['FFE400', 'FFBD00', 'E89400', 'FFCA6C', 'FDFFB8']
+    };
+    
+    function shoot() {
+      confetti({
+        ...defaults,
+        particleCount: 40,
+        scalar: 1.2,
+        shapes: ['']
+      });
+    
+      confetti({
+        ...defaults,
+        particleCount: 10,
+        scalar: 0.75,
+        shapes: ['']
+      });
+    }
+    
+    setTimeout(shoot, 0);
+    setTimeout(shoot, 100);
+    setTimeout(shoot, 200);
+  } else {
+    resultGuessNumber.innerHTML = `<span class='red'>Choose a number between 1 - 100</span>`;
   }
-
-
-
 }
+// console.log(randomGuessNumber); // see the random number
 
-console.log(randomGuessNumber);
+
+
+
 
 
 

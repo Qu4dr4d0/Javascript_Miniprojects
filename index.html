@@ -14,7 +14,7 @@
     </button>
 
     <!--YES OR NO-->
-    <article class="section selected">
+    <article class="section">
       <div class="description">
         <h1 class="title__1">
           YES OR
@@ -50,50 +50,68 @@
       </div>
     </article>
 
-    <!--NAME READER-->
+    <!--NAME GUESSER-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">Name reader</h1>
-        <p class="text__0">Let's see if the computer can guess you name..</p>
+        <h1 class="title__1">Name<br>guesser</h1>
+        <p class="text__0">The computer will secretly try to read your name, so be careful!</p>
       </div>
       <div class="content">
         <input
           id="name__0"
           class="input__text"
-          placeholder="Name"
-          type="text"
+          placeholder="Type your name:"
+          type="password"
         />
         <button id="btn__0" class="btn__0">SUBMIT</button>
         <p id="result__0" class="text__0"></p>
       </div>
     </article>
 
-    <!--CIRCUMFERENCE CALC-->
-    <article class="section">
+    <!--RULE OF 3-->
+    <article class="section selected">
       <div class="description">
-        <h1 class="title__1">CIRCUMFERENCE CALC</h1>
+        <h1 class="title__1">RULE OF 3</h1>
         <p class="text__0">
-          A calculator to that calcs the circumference of a circle
+          A SIMPLE RULE OF 3 CALCULATOR
         </p>
       </div>
       <div class="content">
+        <div class="ruleof3__wrapper1">
         <input
-          id="radius"
-          class="input__text"
-          placeholder="PUT THE RADIUS, EX: 12"
+          id="n1"
+          class="ruleof3__input"
+          placeholder="a"
           type="text"
         />
-        <button id="btn__1" class="btn__0">SUBMIT</button>
-        <p id="result__1" class="text__0"></p>
+        <img src="assets/imgs/arrowRight.svg" alt="">
+        <input
+        id="n2"
+        class="ruleof3__input"
+        placeholder="b"
+        type="text"
+      />
+      </div>
+      <div class="ruleof3__wrapper2">
+        <input
+        id="n3"
+        class="ruleof3__input"
+        placeholder="c"
+        type="text"
+      />
+      <img src="assets/imgs/arrowRight.svg" alt="">
+      <div id="resultRuleOf3"><p>X</p></div>
+      </div>
+        <button id="btnRuleOf3" class="btn__0">calc</button>
       </div>
     </article>
 
     <!--COUNTER-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">COUNTER PROGRAM</h1>
+        <h1 class="title__1">COUNTER<br>PROGRAM</h1>
         <p class="text__0">
-          A calculator to that calcs the circumference of a circle
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus veritatis facere 
         </p>
       </div>
       <div class="content" style="gap: 5px">
@@ -105,10 +123,10 @@
         >
           0
         </p>
-        <div style="display: flex; gap: 15px">
-          <button id="btn__sub" class="btn__0">SUB</button>
-          <button id="btn__reset" class="btn__0">RESET</button>
-          <button id="btn__add" class="btn__0">ADD</button>
+        <div class="btnCounter__wrapper">
+          <button id="btn__sub" class="btn__0">-</button>
+          <button id="btn__reset" class="btn__0"><img class="again" src="assets/imgs/replay.svg" alt=""></button>
+          <button id="btn__add" class="btn__0">+</button>
         </div>
       </div>
     </article>
@@ -116,7 +134,7 @@
     <!--DICE THROWING-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">DICE THROWING</h1>
+        <h1 class="title__1">DICE<br>THROWING</h1>
         <p class="text__0">Click in the button to row a dice</p>
       </div>
       <div class="content">
@@ -133,9 +151,9 @@
     <!--LIGHT-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">LIGHT SWITCH</h1>
+        <h1 class="title__1">LIGHT<br>SWITCH</h1>
         <p id="txt__lamp" class="text__0">
-          It's a little bit dark here, don't you think?
+          It's so dark here...
         </p>
       </div>
       <div class="content" style="gap: 35px">
@@ -150,14 +168,14 @@
     <!--EMAIL SLICER-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">EMAIL SLICER</h1>
+        <h1 class="title__1">EMAIL<br>SLICER</h1>
         <p class="text__0">Type your email in the field</p>
       </div>
       <div class="content">
         <input
           id="email__1"
           class="input__text"
-          placeholder="EMAIL"
+          placeholder="example@example"
           type="text"
         />
         <button id="btnEmail" class="btn__0">SLICE!</button>
@@ -169,15 +187,15 @@
     <!--GUESS THE NUMBER-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">Number guesser</h1>
+        <h1 class="title__1">Number<br>guesser</h1>
         <p class="text__0">Let's see if you're a good guesser...</p>
       </div>
       <div class="content">
         <input
           id="guessNumber"
           class="input__text"
-          placeholder="NUMBER"
-          type="text"
+          placeholder="1 to 100"
+          type="number"
         />
         <button id="btnGuessNumber" class="btn__0">GUESS</button>
         <p id="resultGuessNumber" class="text__0"></p>
@@ -193,12 +211,15 @@
       <p>
         Copyright
         <span style="transform: scale(2)">&#169;</span>
-        2024 by<a target="_blank" href="https://www.linkedin.com/in/quadradoo/">
-          Quadrado</a
+        2024 by <a target="_blank" href="https://www.linkedin.com/in/quadradoo/">Quadrado</a
         >
       </p>
     </footer>
 
+    <!--CONFETTI ANIMATION-->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!--SCRIPT-->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
