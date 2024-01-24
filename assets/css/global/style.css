@@ -2,8 +2,6 @@
 /*SECTIONs*/
 .section {
     display: none;
-    grid-template-rows: 50px 1fr;
-    grid-template-columns: 1fr 1fr;
     place-content: center;
     background-color:  var(--sub-alt-color);
     border-radius: 20px;
@@ -48,7 +46,7 @@ footer a {
 
 .description {
     margin-top: 40px;
-    padding: clamp(10px , 20px,  30px);
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,8 +71,6 @@ footer a {
 
 
 /*TITLEs*/
-
-
 .title__1 {
     font-size: clamp(1rem, 2rem, 3rem);
     color: var(--sub-color);
@@ -86,7 +82,7 @@ footer a {
 .text__0 {
     color: var(--text-color);
     font-size: 1rem;
-    padding: 0 50px;
+
 }
 
 /*INPUTs*/
@@ -139,14 +135,29 @@ footer a {
 }
 
 .btn__arrow {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 70px;
+    min-height: 40px;
     border-radius: 50px;
     font-size: 25px;
     background-color: var(--sub-alt-color);
     color: var(--sub-color);
     cursor: pointer;
     font-weight: 900;
+}
+
+.btns__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#btn__previous {
+    border-radius: 80% 20% 80% 20% / 20% 80% 20% 80%  ;
+}
+#btn__next {
+    border-radius: 20% 80% 20% 80% / 80% 20% 80% 20%   ;
+
 }
 
 /*COLOUR VARIABLES*/

@@ -8,13 +8,8 @@
     <link rel="stylesheet" href="assets/css/global/global.css" />
   </head>
   <body class="">
-    <!-- PREVIOUS BUTTON -->
-    <button id="btn__previous" class="btn__arrow">
-      <p style="transform: translateX(-1px)"><</p>
-    </button>
-
     <!--YES OR NO-->
-    <article class="section">
+    <article class="section selected">
       <div class="description">
         <h1 class="title__1">
           YES OR
@@ -53,8 +48,10 @@
     <!--NAME GUESSER-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">Name<br>guesser</h1>
-        <p class="text__0">The computer will secretly try to read your name, so be careful!</p>
+        <h1 class="title__1">Name<br />guesser</h1>
+        <p class="text__0">
+          The computer will secretly try to read your name, so be careful!
+        </p>
       </div>
       <div class="content">
         <input
@@ -69,39 +66,22 @@
     </article>
 
     <!--RULE OF 3-->
-    <article class="section selected">
+    <article class="section">
       <div class="description">
         <h1 class="title__1">RULE OF 3</h1>
-        <p class="text__0">
-          A SIMPLE RULE OF 3 CALCULATOR
-        </p>
+        <p class="text__0">A SIMPLE RULE OF 3 CALCULATOR</p>
       </div>
       <div class="content">
         <div class="ruleof3__wrapper1">
-        <input
-          id="n1"
-          class="ruleof3__input"
-          placeholder="a"
-          type="text"
-        />
-        <img src="assets/imgs/arrowRight.svg" alt="">
-        <input
-        id="n2"
-        class="ruleof3__input"
-        placeholder="b"
-        type="text"
-      />
-      </div>
-      <div class="ruleof3__wrapper2">
-        <input
-        id="n3"
-        class="ruleof3__input"
-        placeholder="c"
-        type="text"
-      />
-      <img src="assets/imgs/arrowRight.svg" alt="">
-      <div id="resultRuleOf3"><p>X</p></div>
-      </div>
+          <input id="n1" class="ruleof3__input" placeholder="a" type="text" />
+          <img src="assets/imgs/arrowRight.svg" alt="" />
+          <input id="n2" class="ruleof3__input" placeholder="b" type="text" />
+        </div>
+        <div class="ruleof3__wrapper2">
+          <input id="n3" class="ruleof3__input" placeholder="c" type="text" />
+          <img src="assets/imgs/arrowRight.svg" alt="" />
+          <div id="resultRuleOf3"><p>X</p></div>
+        </div>
         <button id="btnRuleOf3" class="btn__0">calc</button>
       </div>
     </article>
@@ -109,9 +89,10 @@
     <!--COUNTER-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">COUNTER<br>PROGRAM</h1>
+        <h1 class="title__1">COUNTER<br />PROGRAM</h1>
         <p class="text__0">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus veritatis facere 
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          veritatis facere
         </p>
       </div>
       <div class="content" style="gap: 5px">
@@ -125,7 +106,9 @@
         </p>
         <div class="btnCounter__wrapper">
           <button id="btn__sub" class="btn__0">-</button>
-          <button id="btn__reset" class="btn__0"><img class="again" src="assets/imgs/replay.svg" alt=""></button>
+          <button id="btn__reset" class="btn__0">
+            <img class="again" src="assets/imgs/replay.svg" alt="" />
+          </button>
           <button id="btn__add" class="btn__0">+</button>
         </div>
       </div>
@@ -134,7 +117,7 @@
     <!--DICE THROWING-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">DICE<br>THROWING</h1>
+        <h1 class="title__1">DICE<br />THROWING</h1>
         <p class="text__0">Click in the button to row a dice</p>
       </div>
       <div class="content">
@@ -151,10 +134,8 @@
     <!--LIGHT-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">LIGHT<br>SWITCH</h1>
-        <p id="txt__lamp" class="text__0">
-          It's so dark here...
-        </p>
+        <h1 class="title__1">LIGHT<br />SWITCH</h1>
+        <p id="txt__lamp" class="text__0">It's so dark here...</p>
       </div>
       <div class="content" style="gap: 35px">
         <img id="lamp" src="assets/imgs/lampOff.png" alt="lamp off" />
@@ -168,7 +149,7 @@
     <!--EMAIL SLICER-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">EMAIL<br>SLICER</h1>
+        <h1 class="title__1">EMAIL<br />SLICER</h1>
         <p class="text__0">Type your email in the field</p>
       </div>
       <div class="content">
@@ -187,7 +168,7 @@
     <!--GUESS THE NUMBER-->
     <article class="section">
       <div class="description">
-        <h1 class="title__1">Number<br>guesser</h1>
+        <h1 class="title__1">Number<br />guesser</h1>
         <p class="text__0">Let's see if you're a good guesser...</p>
       </div>
       <div class="content">
@@ -202,16 +183,25 @@
       </div>
     </article>
 
+    <div class="btns__wrapper">
+    <!-- PREVIOUS BUTTON -->
+    <button id="btn__previous" class="btn__arrow">
+      <p style="transform: translateX(-1px)"><</p>
+    </button>
+
     <!-- NEXT BUTTON -->
     <button id="btn__next" class="btn__arrow">
       <p style="transform: translateX(1px)">></p>
     </button>
+  </div>
 
     <footer>
       <p>
         Copyright
         <span style="transform: scale(2)">&#169;</span>
-        2024 by <a target="_blank" href="https://www.linkedin.com/in/quadradoo/">Quadrado</a
+        2024 by
+        <a target="_blank" href="https://www.linkedin.com/in/quadradoo/"
+          >Quadrado</a
         >
       </p>
     </footer>
