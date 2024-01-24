@@ -7,8 +7,8 @@
     border-radius: 20px;
     position: relative;
     flex-wrap: wrap;
-    min-height: 375px;
     width: 850px;
+    transform: translateY(-30px);
 }
 
 footer {
@@ -150,6 +150,7 @@ footer a {
     align-items: center;
     justify-content: center;
     gap: 40px;
+    transform: translateY(-30px);
 }
 
 #btn__previous {

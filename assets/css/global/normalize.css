@@ -17,7 +17,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 15px;
-  padding: clamp(10px, 50px, 30px);
+  padding: 10px;
   text-transform: lowercase;
   overflow: hidden;
 }
