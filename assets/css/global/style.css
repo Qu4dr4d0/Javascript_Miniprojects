@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     width: 850px;
     transform: translateY(-30px);
+    height: 380px;
 }
 
 footer {
@@ -82,7 +83,7 @@ footer a {
 .text__0 {
     color: var(--text-color);
     font-size: 1rem;
-
+    
 }
 
 /*INPUTs*/
@@ -135,31 +136,27 @@ footer a {
 }
 
 .btn__arrow {
-    min-width: 70px;
-    min-height: 40px;
+    transform: scale(1.5);
     border-radius: 50px;
     font-size: 25px;
-    background-color: var(--sub-alt-color);
     color: var(--sub-color);
     cursor: pointer;
     font-weight: 900;
 }
 
+.btn__arrow:hover {
+    color: var(--text-color);
+    transition: all .1s;
+}
+
 .btns__wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+    align-items: end;
+    justify-content: end;
+    gap: 80px;
     transform: translateY(-30px);
 }
 
-#btn__previous {
-    border-radius: 80% 20% 80% 20% / 20% 80% 20% 80%  ;
-}
-#btn__next {
-    border-radius: 20% 80% 20% 80% / 80% 20% 80% 20%   ;
-
-}
 
 /*COLOUR VARIABLES*/
 .yellow {

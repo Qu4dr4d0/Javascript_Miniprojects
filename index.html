@@ -91,8 +91,7 @@
       <div class="description">
         <h1 class="title__1">COUNTER<br />PROGRAM</h1>
         <p class="text__0">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-          veritatis facere
+          A simple counter.. It's useful for counting things..
         </p>
       </div>
       <div class="content" style="gap: 5px">
@@ -183,17 +182,30 @@
       </div>
     </article>
 
-    <div class="btns__wrapper">
-    <!-- PREVIOUS BUTTON -->
-    <button id="btn__previous" class="btn__arrow">
-      <p style="transform: translateX(-1px)"><</p>
-    </button>
+    <!--MULTIPLICATION TABLE-->
+    <article class="section">
+      <div class="description">
+        <h1 class="title__1">Multiplication<br />table</h1>
+        <p class="text__0">Choose any number you want...</p>
+      </div>
+      <div class="content">
+        <input
+          id="multTable"
+          class="input__text"
+          placeholder="Type a number"
+          type="number"
+        />
+        <button id="btnMultTable" class="btn__0">X</button>
+        <p id="resultMultTable" class="text__0"></p>
+      </div>
+    </article>
 
-    <!-- NEXT BUTTON -->
-    <button id="btn__next" class="btn__arrow">
-      <p style="transform: translateX(1px)">></p>
-    </button>
-  </div>
+    <div class="btns__wrapper">
+      <!-- PREVIOUS BUTTON -->
+      <i id="btn__previous" class="fa-solid fa-reply btn__arrow"></i>   
+      <!-- NEXT BUTTON -->
+      <i  id="btn__next" class="btn__arrow fa-solid fa-share"></i>
+    </div>
 
     <footer>
       <p>
@@ -208,6 +220,10 @@
 
     <!--CONFETTI ANIMATION-->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/b6824fbda7.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!--SCRIPT-->
     <script src="assets/js/script.js"></script>

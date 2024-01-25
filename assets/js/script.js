@@ -241,6 +241,23 @@ btnGuessNumber.onclick = function() {
 }
 // console.log(randomGuessNumber); // see the random number
 
+// MULTIPLICATION TABLE
+
+
+let btnMultTable = document.getElementById('btnMultTable');
+let resultMultTable = document.getElementById('resultMultTable');
+
+btnMultTable.onclick = function() {
+  let multTable = Number(document.getElementById('multTable').value);
+  let i = 1;
+  resultMultTable.innerHTML = ``;
+
+  while(i <= 10) {
+    resultMultTable.innerHTML += `<span class='yellow'>${multTable} x ${i} = ${multTable * i}</span><br>`;
+    i++;
+  }
+
+}
 
 
 
