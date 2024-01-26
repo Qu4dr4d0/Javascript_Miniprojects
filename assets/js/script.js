@@ -241,9 +241,9 @@ btnGuessNumber.onclick = function() {
 }
 // console.log(randomGuessNumber); // see the random number
 
+
+
 // MULTIPLICATION TABLE
-
-
 let btnMultTable = document.getElementById('btnMultTable');
 let resultMultTable = document.getElementById('resultMultTable');
 
@@ -256,8 +256,24 @@ btnMultTable.onclick = function() {
     resultMultTable.innerHTML += `<span class='yellow'>${multTable} x ${i} = ${multTable * i}</span><br>`;
     i++;
   }
+}
+
+// EVEN OR ODD
+
+let evenOdd = document.getElementById('evenOdd');
+let btnEvenOdd = document.getElementById('btnEvenOdd');
+let resultEvenOdd = document.getElementById('resultEvenOdd');
+
+btnEvenOdd.onclick = function () {
+
+  let evenOdd = Number(document.getElementById('evenOdd').value);
+
+  evenOdd % 2 === 0
+  ? resultEvenOdd.innerHTML = `<span class='yellow'>${evenOdd}</span> is <span class='yellow'>EVEN</span>`
+  : resultEvenOdd.innerHTML = `<span class='yellow'>${evenOdd}</span> is <span class='yellow'>ODD</span>`
 
 }
+
 
 
 
