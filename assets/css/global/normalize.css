@@ -19,7 +19,7 @@ body {
   gap: 25px;
   padding: 10px;
   text-transform: lowercase;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 ::selection {

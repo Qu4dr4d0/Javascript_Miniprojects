@@ -9,7 +9,7 @@
   </head>
   <body class="">
     <!--YES OR NO-->
-    <article class="section selected">
+    <article class="section">
       <div class="description">
         <h1 class="title__1">
           YES OR
@@ -66,7 +66,7 @@
     </article>
 
     <!--RULE OF 3-->
-    <article class="section">
+    <article id="sectionRuleOf3" class="section">
       <div class="description">
         <h1 class="title__1">RULE OF 3</h1>
         <p class="text__0">A SIMPLE RULE OF 3 CALCULATOR</p>
@@ -183,7 +183,7 @@
     </article>
 
     <!--MULTIPLICATION TABLE-->
-    <article class="section">
+    <article id="sectionMultTable" class="section">
       <div class="description">
         <h1 class="title__1">Multiplication<br />table</h1>
         <p class="text__0">Choose any number you want...</p>
@@ -195,26 +195,54 @@
           placeholder="Type a number"
           type="number"
         />
-        <button id="btnMultTable" class="btn__0">X</button>
         <p id="resultMultTable" class="text__0"></p>
       </div>
     </article>
 
     <!--EVEN OR ODD?-->
-    <article class="section">
+    <article id="sectionEvenOdd" class="section">
       <div class="description">
-        <h1 class="title__1">EVEN<br>OR ODD</h1>
-        <p class="text__0">do you want to know if a number<br> is even or odd? well, you're in the right place!</p>
+        <h1 class="title__1">EVEN<br />OR ODD</h1>
+        <p class="text__0">
+          do you want to know if a number<br />
+          is even or odd? well, you're in the right place!
+        </p>
       </div>
       <div class="content">
         <input
           id="evenOdd"
           class="input__text"
-          placeholder="Type a number"
+          placeholder="Type a number:"
           type="number"
         />
-        <button id="btnEvenOdd" class="btn__0">1/2</button>
         <p id="resultEvenOdd" class="text__0"></p>
+      </div>
+    </article>
+
+    <!--TEMPERATURE CONVERTER-->
+    <article class="section selected">
+      <div class="description">
+        <h1 class="title__1">temperature<br />converter</h1>
+        <p class="text__0">
+          an celsius <i class="fa-solid fa-right-left"></i> fahrenheit temperature converter
+        </p>
+      </div>
+      <div class="content">
+        <input
+          id="inputTemperature"
+          class="input__text"
+          placeholder="Type a number:"
+          type="number"
+          value="0"
+        />
+        <div class="radioTemperatureWrapper text__0">
+          <input checked name="temperature" id="celToFah" type="radio">
+          <label for="celToFah">Celsius <i class="fa-solid fa-arrow-right-long"></i> Fahrenheit</label><br>
+          <input name="temperature" id="fahToCel" type="radio">
+          <label for="fahToCel">Fahrenheit <i class="fa-solid fa-arrow-right-long"></i> Celsius</label>
+        </div>
+        <button id="btnTemperature" class="btn__0">convert</button>
+        <p id="resultTemperature" class="text__0"></p>
       </div>
     </article>
 

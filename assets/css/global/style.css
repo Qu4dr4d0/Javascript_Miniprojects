@@ -86,6 +86,11 @@ footer a {
     
 }
 
+/*FORMATATION*/
+.uppercase {
+    text-transform: uppercase;
+}
+
 /*INPUTs*/
 .input__text {
 
@@ -142,11 +147,13 @@ footer a {
     color: var(--sub-color);
     cursor: pointer;
     font-weight: 900;
+
 }
 
 .btn__arrow:hover {
     color: var(--text-color);
     transition: all .1s;
+
 }
 
 .btns__wrapper {
@@ -252,6 +259,10 @@ footer a {
     color: var(--bg-color);
     background-color: var(--main-color);
 }
+
+/*TEMPERATURE CONVERTER*/
+
+
 
 
 
